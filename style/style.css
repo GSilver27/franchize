@@ -3,6 +3,7 @@
 @import url(./hamburger.css);
 @import url(./header.css);
 @import url(./footer.css);
+@import url(./modal.css);
 .container {
   max-width: 1240px;
   margin: 0 auto;
