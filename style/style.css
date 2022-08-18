@@ -49,13 +49,11 @@ main {
   background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /*background-clip: text;*/
   margin-bottom: 3vmin;
 }
 .main_section-title {
   font-weight: 700;
   line-height: calc(21px + 26 * (100vw / 1440));
-  /*margin-bottom: 40px;*/
   color: #ffffff;
   margin-bottom: 3vmin;
 }
