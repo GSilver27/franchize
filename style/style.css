@@ -31,6 +31,9 @@ main {
 .to18in14 {
   font-size: calc(14px + 4 * (100vw / 1440));
 }
+.to32in14 {
+  font-size: calc(14px + 18 * (100vw / 1440));
+}
 .main_section {
   background-image: url("../image/firstSection.jpg");
   background-repeat: no-repeat;
@@ -38,7 +41,7 @@ main {
 }
 .main_section-back {
   background: rgba(37, 27, 99, 0.7);
-  max-width: 740px;
+  max-width: 50vmax;
   margin: 0 auto;
   text-align: center;
   padding: 16vmin 15px 15vmin;
@@ -68,7 +71,6 @@ main {
 }
 .btn {
   font-weight: 700;
-  font-size: 24px;
   line-height: 28px;
   color: #ffffff;
   min-width: calc(280px + 20 * (100vw / 1440));
@@ -216,7 +218,7 @@ main {
 
 .about__section {
   margin-top: 13vmin;
-  background: #F7F7F7;
+  background: #f7f7f7;
   padding: 5vmin 0 6vmin;
 }
 
@@ -235,7 +237,7 @@ main {
   line-height: 49px;
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1vmin;
@@ -279,7 +281,7 @@ main {
 .about__products-item-4 {
   position: relative;
   height: 80px;
-  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   display: flex;
@@ -301,7 +303,7 @@ main {
 /*}*/
 
 .about__products-text {
-  color: #FFF;
+  color: #fff;
   font-weight: 500;
   font-size: 24px;
   line-height: 140%;
@@ -327,15 +329,14 @@ main {
   width: 26px;
   height: 26px;
   border-radius: 7px;
-  border: 2px solid #4E54C8;
+  border: 2px solid #4e54c8;
 }
 
 .slider_active {
-  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
 }
 
 .slider_inactive {
-
 }
 
 .open-point__section {
@@ -347,7 +348,7 @@ main {
   font-size: 42px;
   line-height: 49px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -400,7 +401,7 @@ main {
   line-height: 140%;
   color: #161235;
   padding: 15px 49px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 64px;
-  border: 3px solid #4E54C8;
+  border: 3px solid #4e54c8;
 }

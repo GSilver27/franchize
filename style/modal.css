@@ -1,4 +1,8 @@
-.zakaz_back {
+.zakaz_back,
+.sec45_back,
+.call_back,
+.get_back,
+.valit_back {
   display: none;
   position: fixed;
   top: 0;
@@ -7,25 +11,93 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   background: rgba(0, 0, 0, 0.5);
 }
-.zakaz_body {
+.zakaz_body,
+.sec45_body,
+.call_body,
+.get_body,
+.valit_body {
   background-color: #ffffff;
+  background-image: url("../image/white-concrete-wall\ 1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 18vmin 10vmin 10vmin 10vmin;
-  max-width: 500px;
-  width: 100%;
+  padding: 15vmin 8vmin 8vmin 8vmin;
+  max-width: fit-content;
 }
-.zakaz_close {
+.valit_body {
+  background-image: url("../image/valit_fone.webp");
+}
+.get_body {
+  background-color: #7f85f3;
+}
+.call_body {
+  background-image: url("../image/razgovor.webp");
+  background-position: center;
+}
+.sec45_body,
+.get_body {
+  padding-top: 8vmin;
+}
+.valit_body {
+  padding-top: 5vmin;
+}
+.valit_head {
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.zakaz_close,
+.sec45_close,
+.call_close,
+.get_close,
+.valit_close {
   position: absolute;
   right: 15px;
+  font-size: 60px;
   top: 0;
   cursor: pointer;
 }
-.zakaz_form {
+.call_close,
+.get_close {
+  color: #ffffff;
+}
+.sec45_title,
+.get_title,
+.valit_title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 5vmin;
+  text-align: center;
+  color: #161235;
+  margin-bottom: 5vmin;
+}
+.get_title {
+  color: #ffffff;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 4vmin;
+}
+.sec45_title b,
+.get_title b,
+.valit_title b {
+  font-weight: 700;
+}
+.zakaz_form,
+.sec45_form,
+.call_form,
+.get_form,
+.valit_form {
+  width: 80vmin;
   display: flex;
   flex-direction: column;
   gap: 5vmin;
@@ -36,16 +108,37 @@
   border-bottom: 1px solid #161235;
   padding: 10px 0;
   font-size: 30px;
+  width: 100%;
+  background-color: transparent;
 }
-.zakaz_body .btn {
+.call_form .input_modal {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.call_form .input_modal::placeholder {
+  color: #ffffff77;
+}
+.zakaz_body .btn,
+.sec45_body .btn,
+.valit_body .btn {
   width: 80%;
   margin: 0 auto;
   color: #4e54c8;
 }
-.zakaz_body .btn:hover {
+.zakaz_body .btn:hover,
+.sec45_body .btn:hover,
+.valit_body .btn:hover {
   color: #ffffff;
 }
 .confirm {
+  text-align: center;
+  font-weight: 400;
+  line-height: 23px;
+  color: #181240;
+}
+.call_body .confirm {
+  color: #ffffff;
 }
 .confirm_link {
+  color: inherit;
 }
