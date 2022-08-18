@@ -1,0 +1,48 @@
+footer {
+  background: #161235;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo_info {
+}
+.footer_logo img {
+  max-width: 290px;
+}
+.info_block {
+}
+.info_block-list {
+}
+.info_block-item {
+}
+.footer_navigate {
+}
+.footer_nav {
+}
+.footer_nav-list {
+}
+.footer_nav-item {
+}
+.footer_social {
+}
+.phone_block {
+}
+.phone {
+}
+.back_call {
+}
+.social_item-block {
+}
+.social_item {
+}
+.footer_policy {
+}
+.policy_bank {
+}
+.policy_bank-list {
+}
+.policy_bank-item {
+}
