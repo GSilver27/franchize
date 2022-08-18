@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./hamburger.css);
 @import url(./header.css);
+@import url(./footer.css);
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -19,11 +20,7 @@ body {
 main {
   flex: 1 0 auto;
 }
-footer {
-  background: #161235;
-  padding-top: 30px;
-  padding-bottom: 60px;
-}
+
 .to42in18 {
   font-size: calc(18px + 22 * (100vw / 1440));
 }
