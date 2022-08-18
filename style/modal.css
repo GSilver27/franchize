@@ -1,0 +1,51 @@
+.zakaz_back {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.zakaz_body {
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 18vmin 10vmin 10vmin 10vmin;
+  max-width: 500px;
+  width: 100%;
+}
+.zakaz_close {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  cursor: pointer;
+}
+.zakaz_form {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmin;
+}
+.input_modal {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #161235;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.zakaz_body .btn {
+  width: 80%;
+  margin: 0 auto;
+  color: #4e54c8;
+}
+.zakaz_body .btn:hover {
+  color: #ffffff;
+}
+.confirm {
+}
+.confirm_link {
+}

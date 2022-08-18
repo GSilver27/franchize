@@ -1,48 +1,105 @@
 footer {
   background: #161235;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 4vmin;
+  padding-bottom: 8vmin;
 }
-.footer .container {
+.footer_wrapper {
   display: flex;
   justify-content: space-between;
 }
-.logo_info {
+.footer_navigate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2vmin;
+  max-width: 110vmin;
+  width: 100%;
+}
+.footer_logo {
+  display: block;
+  margin-bottom: 5vmin;
 }
 .footer_logo img {
-  max-width: 290px;
+  max-width: 36vmin;
 }
-.info_block {
+.footer_info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
 }
-.info_block-list {
-}
-.info_block-item {
-}
-.footer_navigate {
-}
-.footer_nav {
+.footer_info-item {
+  font-weight: 400;
+  line-height: 93.5%;
+  color: #f2f2f2;
 }
 .footer_nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 440px;
+  width: 100%;
+  gap: 20px;
 }
 .footer_nav-item {
+  max-width: 210px;
+  width: 100%;
+}
+.footer_nav-item a {
+  font-weight: 400;
+  line-height: 21px;
+  color: #f2f2f2;
+  text-decoration: none;
 }
 .footer_social {
+  display: flex;
+  flex-direction: column;
+  max-width: 275px;
+  width: 100%;
 }
-.phone_block {
+.footer_email {
+  display: block;
+  margin-top: 3vmin;
+  margin-bottom: 4vmin;
+  font-weight: 400;
+  line-height: 120%;
+  text-align: right;
+  color: #f2f2f2;
+  text-decoration: none;
 }
-.phone {
+.social_block {
+  margin-bottom: 4vmin;
 }
-.back_call {
+.social_list {
+  display: flex;
+  justify-content: right;
+  gap: 3vmin;
 }
-.social_item-block {
+.social_item img {
+  max-width: 30px;
 }
-.social_item {
+.footer_bank {
+  display: flex;
+  flex-direction: column;
+  gap: 7vmin;
 }
-.footer_policy {
+.footer_bank-list {
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+  justify-content: right;
 }
-.policy_bank {
+.footer_bank-item img {
+  max-width: 50px;
 }
-.policy_bank-list {
+.footer_policy-link {
+  font-weight: 400;
+  line-height: 19px;
+  text-align: right;
+  color: #ffffff;
 }
-.policy_bank-item {
+.prava_text {
+  margin-top: 10px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
 }
