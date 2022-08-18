@@ -37,7 +37,7 @@ main {
   background-size: cover;
 }
 .main_section-back {
-  background: rgba(37, 27, 99, 0.38);
+  background: rgba(37, 27, 99, 0.7);
   max-width: 740px;
   margin: 0 auto;
   text-align: center;
@@ -49,13 +49,13 @@ main {
   background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /*background-clip: text;*/
   margin-bottom: 3vmin;
 }
 .main_section-title {
   font-weight: 700;
   line-height: calc(21px + 26 * (100vw / 1440));
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
   color: #ffffff;
   margin-bottom: 3vmin;
 }
@@ -96,7 +96,7 @@ main {
   transition: all 0.5s ease-in-out;
 }
 .btn:hover {
-  background: rgba(78, 84, 200);
+  background: rgb(78, 84, 200);
 }
 .btn:hover::before {
   border: 1px solid #4e54c8;
@@ -184,7 +184,7 @@ main {
   position: relative;
 }
 .eco_back {
-  background-image: url("../image//sonya.webp");
+  background-image: url("../image/sonya.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
@@ -214,4 +214,195 @@ main {
   height: 100%;
   background: rgba(4, 51, 72, 0.59);
   display: none;
+}
+
+.about__section {
+  margin-top: 13vmin;
+  background: #F7F7F7;
+  padding: 5vmin 0 6vmin;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__info {
+  position: relative;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1vmin;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 41px;
+  color: #161235;
+  margin-top: 2vmin;
+  max-width: 620px;
+}
+
+.about__text span {
+  font-weight: 700;
+}
+
+.about__products-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #161235;
+  margin-top: 3vmin;
+}
+
+.about__products {
+  position: absolute;
+  top: 25vmin;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.about__products-item-1,
+.about__products-item-2,
+.about__products-item-3,
+.about__products-item-4 {
+  position: relative;
+  height: 80px;
+  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.about__products-item-1 {*/
+/*  top: 40px;*/
+/*}*/
+/*.about__products-item-2 {*/
+/*  top: 155px;*/
+/*}*/
+/*.about__products-item-3 {*/
+/*  top: 270px;*/
+/*}*/
+/*.about__products-item-4 {*/
+/*  top: 385px;*/
+/*}*/
+
+.about__products-text {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  margin-right: 100px;
+}
+
+.about__slider {
+  margin-top: 91px;
+}
+
+.about__slider img {
+}
+
+.slider__slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+
+.slider_active,
+.slider_inactive {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  border: 2px solid #4E54C8;
+}
+
+.slider_active {
+  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+}
+
+.slider_inactive {
+
+}
+
+.open-point__section {
+  margin-top: 2vmin;
+}
+
+.open-point__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4E54C8 0%, #8F94FB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.open-point__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #161235;
+  margin-top: 2vmin;
+}
+
+.open-point__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vmin;
+  margin-bottom: 16vmin;
+  height: 657px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url("../image/open-point-team.png");
+}
+
+.container__column {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 12vmin;
+}
+
+.open-point__container .container__column:first-of-type .container__row {
+  justify-content: space-between;
+}
+
+.open-point__container .container__column:last-of-type {
+  align-items: end;
+}
+
+.open-point__container div:last-of-type .container__row {
+  max-width: 500px;
+  gap: 30px;
+}
+
+.container__row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #161235;
+  padding: 15px 49px;
+  background: #FFFFFF;
+  border-radius: 64px;
+  border: 3px solid #4E54C8;
 }
