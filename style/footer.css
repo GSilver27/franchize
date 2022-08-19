@@ -3,11 +3,13 @@ footer {
   padding-top: 4vmin;
   padding-bottom: 8vmin;
 }
-.footer_wrapper {
+
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.footer_navigate {
+
+.footer__navigate {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,47 +17,56 @@ footer {
   max-width: 110vmin;
   width: 100%;
 }
-.footer_logo {
+
+.footer__logo {
   display: block;
   margin-bottom: 5vmin;
 }
-.footer_logo img {
+
+.footer__logo img {
   max-width: 36vmin;
 }
-.footer_info-list {
+
+.footer__info-list {
   display: flex;
   flex-direction: column;
   gap: 3vmin;
 }
-.footer_info-item {
+
+.footer__info-item {
   font-weight: 400;
   line-height: 93.5%;
   color: #f2f2f2;
 }
-.footer_nav-list {
+
+.footer__nav-list {
   display: flex;
   flex-wrap: wrap;
   max-width: 440px;
   width: 100%;
   gap: 20px;
 }
-.footer_nav-item {
+
+.footer__nav-item {
   max-width: 210px;
   width: 100%;
 }
-.footer_nav-item a {
+
+.footer__nav-item a {
   font-weight: 400;
   line-height: 21px;
   color: #f2f2f2;
   text-decoration: none;
 }
-.footer_social {
+
+.footer__social {
   display: flex;
   flex-direction: column;
   max-width: 275px;
   width: 100%;
 }
-.footer_email {
+
+.footer__email {
   display: block;
   margin-top: 3vmin;
   margin-bottom: 4vmin;
@@ -65,38 +76,45 @@ footer {
   color: #f2f2f2;
   text-decoration: none;
 }
-.social_block {
+.social__block {
   margin-bottom: 4vmin;
 }
-.social_list {
+
+.social__list {
   display: flex;
   justify-content: right;
   gap: 3vmin;
 }
-.social_item img {
+
+.social__item img {
   max-width: 30px;
 }
-.footer_bank {
+
+.footer__bank {
   display: flex;
   flex-direction: column;
   gap: 7vmin;
 }
-.footer_bank-list {
+
+.footer__bank-list {
   display: flex;
   align-items: center;
   gap: 1vmin;
   justify-content: right;
 }
-.footer_bank-item img {
+
+.footer__bank-item img {
   max-width: 50px;
 }
-.footer_policy-link {
+
+.footer__policy-link {
   font-weight: 400;
   line-height: 19px;
   text-align: right;
   color: #ffffff;
 }
-.prava_text {
+
+.prava__text {
   margin-top: 10px;
   font-weight: 400;
   line-height: 19px;

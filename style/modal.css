@@ -1,8 +1,8 @@
-.zakaz_back,
-.sec45_back,
-.call_back,
-.get_back,
-.valit_back {
+.popup__order,
+.popup__sec45,
+.popup__call-back,
+.get__back,
+.popup__leave {
   display: none;
   position: fixed;
   top: 0;
@@ -14,13 +14,14 @@
   z-index: 2;
   background: rgba(0, 0, 0, 0.5);
 }
-.zakaz_body,
-.sec45_body,
-.call_body,
-.get_body,
-.valit_body {
+
+.order__body,
+.sec45__body,
+.call-back__body,
+.get__body,
+.leave__body {
   background-color: #ffffff;
-  background-image: url("../image/white-concrete-wall\ 1.webp");
+  background-image: url("../image/popup-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -30,50 +31,58 @@
   padding: 15vmin 8vmin 8vmin 8vmin;
   max-width: fit-content;
 }
-.valit_body {
+
+.leave__body {
   background-image: url("../image/valit_fone.webp");
 }
-.get_body {
+
+.get__body {
   background-color: #7f85f3;
 }
-.call_body {
+
+.call-back__body {
   background-image: url("../image/razgovor.webp");
   background-position: center;
 }
-.sec45_body,
-.get_body {
+
+.sec45__body,
+.get__body {
   padding-top: 8vmin;
 }
-.valit_body {
+
+.leave__body {
   padding-top: 5vmin;
 }
-.valit_head {
+
+.leave__head {
   font-weight: 700;
   line-height: 56px;
   text-align: center;
   background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
-.zakaz_close,
-.sec45_close,
-.call_close,
-.get_close,
-.valit_close {
+
+.order__close,
+.sec45__close,
+.call-back__close,
+.get__close,
+.leave__close {
   position: absolute;
   right: 15px;
   font-size: 60px;
   top: 0;
   cursor: pointer;
 }
-.call_close,
-.get_close {
+
+.call-back__close,
+.get__close {
   color: #ffffff;
 }
-.sec45_title,
-.get_title,
-.valit_title {
+
+.sec45__title,
+.get__title,
+.leave__title {
   font-weight: 400;
   font-size: 32px;
   line-height: 5vmin;
@@ -81,28 +90,31 @@
   color: #161235;
   margin-bottom: 5vmin;
 }
-.get_title {
+
+.get__title {
   color: #ffffff;
   max-width: 550px;
-  margin: 0 auto;
-  margin-bottom: 4vmin;
+  margin: 0 auto 4vmin;
 }
-.sec45_title b,
-.get_title b,
-.valit_title b {
+
+.sec45__title b,
+.get__title b,
+.leave__title b {
   font-weight: 700;
 }
-.zakaz_form,
-.sec45_form,
-.call_form,
-.get_form,
-.valit_form {
+
+.order__form,
+.sec45__form,
+.call-back__form,
+.get__form,
+.leave__form {
   width: 80vmin;
   display: flex;
   flex-direction: column;
   gap: 5vmin;
 }
-.input_modal {
+
+.input__modal {
   outline: none;
   border: none;
   border-bottom: 1px solid #161235;
@@ -111,34 +123,41 @@
   width: 100%;
   background-color: transparent;
 }
-.call_form .input_modal {
+
+.call-back__form .input__modal {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
-.call_form .input_modal::placeholder {
+
+.call-back__form .input__modal::placeholder {
   color: #ffffff77;
 }
-.zakaz_body .btn,
-.sec45_body .btn,
-.valit_body .btn {
+
+.order__body .btn,
+.sec45__body .btn,
+.leave__body .btn {
   width: 80%;
   margin: 0 auto;
   color: #4e54c8;
 }
-.zakaz_body .btn:hover,
-.sec45_body .btn:hover,
-.valit_body .btn:hover {
+
+.order__body .btn:hover,
+.sec45__body .btn:hover,
+.leave__body .btn:hover {
   color: #ffffff;
 }
+
 .confirm {
   text-align: center;
   font-weight: 400;
   line-height: 23px;
   color: #181240;
 }
-.call_body .confirm {
+
+.call-back__body .confirm {
   color: #ffffff;
 }
-.confirm_link {
+
+.confirm__link {
   color: inherit;
 }

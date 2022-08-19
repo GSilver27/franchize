@@ -18,7 +18,6 @@ var ua = navigator.userAgent,
 	caretTimeoutId;
 
 $.mask = {
-	//Predefined character definitions
 	definitions: {
 		'9': "[0-9]",
 		'a': "[A-Za-z]",
@@ -30,7 +29,6 @@ $.mask = {
 };
 
 $.fn.extend({
-	//Helper Function for Caret positioning
 	caret: function(begin, end) {
 		var range;
 

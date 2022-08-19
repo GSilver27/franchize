@@ -2,29 +2,35 @@ header {
   background: #161235;
   padding: 45px 0 23px 0;
 }
-.header_wrapper {
+
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.header_logo img {
+
+.header__logo img {
   max-width: 290px;
 }
-.header_nav-list {
+
+.header__nav-list {
   display: flex;
   gap: 32px;
 }
-.header_phone {
+
+.header__phone {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .hamburger-menu {
   position: relative;
   width: 30px;
 }
-.header_nav-link {
+
+.header__nav-link {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -32,11 +38,13 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
-.phone_block {
+
+.phone__block {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
 .phone {
   font-family: sans-serif;
   font-weight: 400;
@@ -46,7 +54,8 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
-.back_call {
+
+.back__call {
   font-weight: 700;
   border: none;
   padding: 0;
@@ -58,11 +67,13 @@ header {
   line-height: 19px;
   text-decoration: underline;
 }
+
 @media screen and (max-width: 900px) {
   .header_nav {
     display: none;
   }
 }
+
 @media screen and (max-width: 720px) {
   .menu__box {
     max-width: 375px;
@@ -73,21 +84,22 @@ header {
     font-size: 18px;
   }
 }
+
 @media screen and (max-width: 560px) {
-  .header_logo img {
+  .header__logo img {
     max-width: 110px;
   }
   .header {
     padding: 12px 0;
   }
-  .header_wrapper {
+  .header__wrapper {
     align-items: center;
   }
   .phone,
-  .back_call {
+  .back__call {
     font-size: 14px;
   }
-  .phone_block {
+  .phone__block {
     gap: 0;
   }
 }
