@@ -44,4 +44,15 @@ $(document).ready(function () {
       flag = true;
     }
   });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 100000,
+    from: 0,
+    to: 100000,
+    step: 1000,
+    grid: true
+  });
+
 });

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style/style.css"/>
     <link rel="stylesheet" href="style/adaptive.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <title>FEMIDA FORCE</title>
 </head>
 <body>
@@ -66,7 +68,6 @@
 </header>
 
 <main class="main">
-
     <section class="main__section">
         <div class="container">
             <div class="main__section-back">
@@ -171,14 +172,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="about__slider">
-                    <img class="slider__img-1" src="image/about-1.png" alt=""/>
-                    <!-- <img class="slider__img-2" src="image/about-2.png" alt="" /> -->
-                    <!-- <img class="slider__img-3" src="image/about-3.png" alt="" /> -->
-                    <div class="slider__slides">
-                        <div class="slider_active"></div>
-                        <div class="slider_inactive"></div>
-                        <div class="slider_inactive"></div>
+                <div class="about__slider swiper">
+                    <div class="swiper-wrapper">
+                        <img class="slider__img-1 swiper-slide" src="image/about-1.png" alt=""/>
+                        <img class="slider__img-2 swiper-slide" src="image/about-2.png" alt=""/>
+                        <img class="slider__img-3 swiper-slide" src="image/about-3.png" alt=""/>
+                    </div>
+                    <div class="slider__slides swiper-pagination">
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>
@@ -378,12 +381,16 @@
                             Я хочу вложить: <span>100.000 руб.</span>
                             <img src="image/edit.webp" alt="">
                         </div>
-                        <div class="calculator__range"></div>
+                        <div>
+                            <input type="text" class="js-range-slider" name="sum_range" value="" />
+                        </div>
                         <div class="calculator__months">
                             Хочу окупить за:
                             <input type="text" name="amount-months" placeholder="3 месяца">
                         </div>
-                        <div class="calculator__range"></div>
+                        <div>
+                            <input type="text" class="js-range-slider" name="months_range" value="" />
+                        </div>
                         <div class="calculator__city">
                             <label class="calculator__city-label">Введите город:
                                 <input type="text" class="validator" id="calculator-city" minlength="3" required>
@@ -670,16 +677,64 @@
         </div>
     </section>
 
+<!--    <section class="reviews__section">-->
+<!--        <div class="container">-->
+<!--            <h3 class="section-title to42in18">Отзывы</h3>-->
+<!--            <div class="reviews__container">-->
+<!--                <div class="reviews__btn_next">-->
+<!--                    <img src="image/slider-next-btn.webp" alt="">-->
+<!--                </div>-->
+<!--                <div class="reviews__slider">-->
+<!--                    <div class="slider__container">-->
+<!--                        <div class="slider__review">-->
+<!--                            <div class="slider__review-image">-->
+<!--                                <img src="image/reviews-1.png" alt="">-->
+<!--                                <div class="slider__review-name">Иванов ИВан</div>-->
+<!--                            </div>-->
+<!--                            <p class="slider__review-text">-->
+<!--                                «Первое, что хочется отметить в данном бизнесе — владельцы франшизы постоянно с нами-->
+<!--                                на связи, что называется, 24/7. Это дорогого стоит! Второй крутой момент — рынок-->
+<!--                                кредитных-->
+<!--                                долгов очень быстро растёт и у нас нет проблем в клиентах. И, главное, в этом бизнесе-->
+<!--                                деньги есть и очень большие! Поэтому, если вы спросите меня, стоит ли купить данную-->
+<!--                                франшизу, то я скажу - „ДА“! Более того, у меня самого франшиза уже в 10 городах,-->
+<!--                                и я планирую дальше тиражировать этот бизнес»-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slider__container">-->
+<!--                        <div class="slider__review">-->
+<!--                            <div class="slider__review-image">-->
+<!--                                <img src="image/reviews-2.png" alt="">-->
+<!--                                <div class="slider__review-name">ИвановА Ева</div>-->
+<!--                            </div>-->
+<!--                            <p class="slider__review-text">-->
+<!--                                «Я увидела в этой нише перспективы… и не прогадала. Здесь потрясающий командный-->
+<!--                                дух среди всех партнёров-франчайзи: все делятся своим опытом и результатами работы.-->
+<!--                                Ещё мне нравятся ценности компании: добросовестность и помощь людям! У франшизы-->
+<!--                                очень простая и понятная бизнес-модель, а главное, постоянно растущий спрос на наши-->
+<!--                                услуги. Поэтому зарабатывать здесь вы точно будете».-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="reviews__btn_prev">-->
+<!--                    <img src="image/slider-prev-btn.webp" alt="">-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
     <section class="reviews__section">
         <div class="container">
             <h3 class="section-title to42in18">Отзывы</h3>
             <div class="reviews__container">
-                <div class="reviews__btn_next">
+                <div class="reviews__btn_next swiper-button-next">
                     <img src="image/slider-next-btn.webp" alt="">
                 </div>
-                <div class="reviews__slider">
-                    <div class="slider__container">
-                        <div class="slider__review">
+                <div class="reviews__slider swiper">
+                    <div class="slider__container swiper-wrapper">
+                        <div class="slider__review swiper-slide">
                             <div class="slider__review-image">
                                 <img src="image/reviews-1.png" alt="">
                                 <div class="slider__review-name">Иванов ИВан</div>
@@ -695,8 +750,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="slider__container">
-                        <div class="slider__review">
+                    <div class="slider__container swiper-wrapper">
+                        <div class="slider__review swiper-slide">
                             <div class="slider__review-image">
                                 <img src="image/reviews-2.png" alt="">
                                 <div class="slider__review-name">ИвановА Ева</div>
@@ -710,8 +765,40 @@
                             </p>
                         </div>
                     </div>
+                    <div class="slider__container swiper-wrapper">
+                        <div class="slider__review swiper-slide">
+                            <div class="slider__review-image">
+                                <img src="image/reviews-2.png" alt="">
+                                <div class="slider__review-name">ИвановА Ева</div>
+                            </div>
+                            <p class="slider__review-text">
+                                «Я увидела в этой нише перспективы… и не прогадала. Здесь потрясающий командный
+                                дух среди всех партнёров-франчайзи: все делятся своим опытом и результатами работы.
+                                Ещё мне нравятся ценности компании: добросовестность и помощь людям! У франшизы
+                                очень простая и понятная бизнес-модель, а главное, постоянно растущий спрос на наши
+                                услуги. Поэтому зарабатывать здесь вы точно будете».
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider__container swiper-wrapper">
+                        <div class="slider__review swiper-slide">
+                            <div class="slider__review-image">
+                                <img src="image/reviews-1.png" alt="">
+                                <div class="slider__review-name">Иванов ИВан</div>
+                            </div>
+                            <p class="slider__review-text">
+                                «Первое, что хочется отметить в данном бизнесе — владельцы франшизы постоянно с нами
+                                на связи, что называется, 24/7. Это дорогого стоит! Второй крутой момент — рынок
+                                кредитных
+                                долгов очень быстро растёт и у нас нет проблем в клиентах. И, главное, в этом бизнесе
+                                деньги есть и очень большие! Поэтому, если вы спросите меня, стоит ли купить данную
+                                франшизу, то я скажу - „ДА“! Более того, у меня самого франшиза уже в 10 городах,
+                                и я планирую дальше тиражировать этот бизнес»
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="reviews__btn_prev">
+                <div class="reviews__btn_prev swiper-button-prev">
                     <img src="image/slider-prev-btn.webp" alt="">
                 </div>
             </div>
@@ -795,8 +882,8 @@
             </div>
         </div>
     </section>
-
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
@@ -1019,6 +1106,41 @@
         </form>
     </div>
 </div>
+
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiperAbout = new Swiper('.about__slider', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        effect: 'cards',
+        grabCursor: true,
+        speed: 500,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        }
+    });
+
+    const swiperReviews = new Swiper('.reviews__slider', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        grabCursor: true,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 50,
+        speed: 1500,
+        autoplay: {
+            delay: 10000,
+        },
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="scripts/jq.js"></script>
 <script src="scripts/jquery.maskedinput.js"></script>
 <script src="scripts/js.js"></script>
