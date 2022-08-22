@@ -47,8 +47,6 @@ input:focus {
 
 .video-wrapper {
   position: relative;
-  width: 100vm;
-  height: 85vh;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -59,8 +57,12 @@ input:focus {
 
 .video-wrapper video {
   position: absolute;
+  top: 0;
   left: 0;
   z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .main__section-back {

@@ -174,9 +174,6 @@
 }
 
   @media screen and (max-width: 768px) {
-    .main__section-back {
-      padding: 200px 15px;
-    }
 
     .container {
     padding: 0 15px;
