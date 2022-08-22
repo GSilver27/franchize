@@ -253,9 +253,8 @@ input:focus {
 }
 
 .about__section {
-  margin-top: 13vmin;
-  background: #f7f7f7;
-  padding: 5vmin 0 6vmin;
+  margin: 10vmin 0;
+  padding: 5vmin 0;
 }
 
 .about__container {
@@ -267,15 +266,7 @@ input:focus {
   position: relative;
 }
 
-.about__title {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 49px;
-  text-align: center;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.about__section .section__title {
   margin-bottom: 1vmin;
 }
 
@@ -298,12 +289,12 @@ input:focus {
   line-height: 140%;
   text-transform: uppercase;
   color: #161235;
-  margin-top: 3vmin;
+  margin-top: 50px;
 }
 
 .about__products {
   position: absolute;
-  bottom: 60px;
+  bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
@@ -347,11 +338,11 @@ input:focus {
 .about__slider {
   width: 425px;
   height: 600px;
-  margin-top: 91px;
+  margin-top: 60px;
 }
 
 .about__slider img {
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .slider__slides {
@@ -379,7 +370,7 @@ input:focus {
 }
 
 .open-point__section {
-  margin-top: 2vmin;
+  padding-bottom: 10vmin;
 }
 
 .open-point__title {
@@ -690,8 +681,8 @@ input:focus {
   position: absolute;
   top: 0;
   height: 100%;
-  /*width: 121%;*/
-  /*right: -120%;*/
+  width: 120%;
+  right: -119%;
   background: linear-gradient(90deg, #8f94fb  1000%, #4e54c8 0);
 }
 
@@ -759,6 +750,7 @@ input:focus {
   background-repeat: no-repeat;
   background-image: url("../image/calculator-section.png");
 }
+
 
 .calculator__title {
   font-weight: 700;
@@ -1009,6 +1001,7 @@ input:focus {
 .info__includes ul li {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   margin: 20px 0;
 }
 
@@ -1032,6 +1025,7 @@ input:focus {
   margin-bottom: 20vmin;
   padding-bottom: 10vmin;
   background-repeat: no-repeat;
+  background-position-x: center;
   background-size: 100%;
   background-image: url("../image/training-section-background.png");
 }

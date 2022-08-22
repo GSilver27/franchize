@@ -1,39 +1,157 @@
-@media screen and (max-width: 768px) {
-  .container {
+@media screen and (max-width: 1440px) {
+  .about__products-text::before {
+    width: 16%;
+    left: -16%;
+  }
+  .form__advantages-text::after {
+    width: 15%;
+    right: -15%;
+  }
+  .revenue__item::before {
+    width: 18%;
+    left: -18%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about__products-text::before {
+    width: 16px;
+    left: -15px;
+  }
+  .about__container {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .about__text,
+  .about__products-title {
+    align-self: center;
+  }
+  .about__products-title {
+    text-align: center;
+  }
+  .about__products {
+    position: relative;
+    margin-top: 50px;
+  }
+  .open-point__container {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0;
+    background-size: auto;
+    margin-top: 30px;
+  }
+  .container__column {
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .container__column:first-of-type {
+    margin-top: 50px;
+  }
+  .container__row {
+    width: 300px;
+    justify-content: space-between;
+    padding: 5px 50px;
+    gap: 5px;
+  }
+  .open-point__container div:last-of-type .container__row {
+    gap: 5px;
+  }
+
+
+
+
+  .open-point__container .container__column:last-of-type {
+    align-items: center;
+  }
+
+  .form__advantages-text::after {
+    width: 16px;
+    right: -15px;
+  }
+  .consultation__container {
+    justify-content: start;
+  }
+  .form__container {
+    max-width: 450px;
+  }
+  .form__container form {
+    width: 500px;
+  }
+  .form__container form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px;
+  }
+
+
+
+  .calculator__container {
+    background-image: none;
+  }
+  .calculator__img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .revenue__item::before {
+    width: 16px;
+    left: -15px;
+  }
+
+}
+
+  @media screen and (max-width: 768px) {
+    .container {
     padding: 0 15px;
+    }
+    .btn::before {
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      left: -5px;
+    }
+    .to42in18 {
+      font-size: calc(18px + (22 + 22 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .to24in14 {
+      font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .to18in14 {
+      font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .to32in14 {
+      font-size: calc(14px + (18 + 18 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .main__section-desc {
+      line-height: calc(14px + (15 + 15 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .btn {
+      min-width: calc(280px + (20 + 20 * 0.7) * ((100vw - 375px) / 1440));
+      min-height: calc(60px + (20 + 20 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .work__title {
+      font-size: calc(16px + (26 + 26 * 0.7) * ((100vw - 375px) / 1440));
+    }
+
+    .eco__desc {
+      line-height: calc(21px + (23 + 23 * 0.7) * ((100vw - 375px) / 1440));
+    }
+    .eco__fone {
+      display: block;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+  .container__row {
+    padding: 5px 20px;
   }
-  .btn::before {
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-  }
-  .to42in18 {
-    font-size: calc(18px + (22 + 22 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .to24in14 {
-    font-size: calc(14px + (10 + 10 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .to18in14 {
-    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .to32in14 {
-    font-size: calc(14px + (18 + 18 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .main__section-desc {
-    line-height: calc(14px + (15 + 15 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .btn {
-    min-width: calc(280px + (20 + 20 * 0.7) * ((100vw - 375px) / 1440));
-    min-height: calc(60px + (20 + 20 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .work__title {
-    font-size: calc(16px + (26 + 26 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .eco__desc {
-    line-height: calc(21px + (23 + 23 * 0.7) * ((100vw - 375px) / 1440));
-  }
-  .eco__fone {
-    display: block;
+  .container__row div {
+    justify-content: center;
+  }  .container__row img {
+    width: 32px;
+    justify-content: end;
   }
 }
