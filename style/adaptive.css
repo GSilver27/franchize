@@ -171,6 +171,19 @@
     width: 16px;
     left: -15px;
   }
+
+  .contacts__container {
+    flex-direction: column-reverse;
+  }
+  .contacts__map {
+    border-right: 3px solid #8F94FB;
+  }
+  .contacts__map iframe {
+    width: 100%;
+  }
+  .about__slider {
+    height: 100%;
+  }
 }
 
   @media screen and (max-width: 768px) {
@@ -325,19 +338,6 @@
     }
     .telegram__image {
       display: none;
-    }
-
-    .contacts__container {
-      flex-direction: column-reverse;
-    }
-    .contacts__map {
-      border-right: 3px solid #8F94FB;
-    }
-    .contacts__map iframe {
-      width: 100%;
-    }
-    .about__slider {
-      height: 100%;
     }
   }
 
