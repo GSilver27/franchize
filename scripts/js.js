@@ -8,11 +8,11 @@ $(document).ready(function () {
   });
 
   $(".get__show").on("click", function () {
-    $(".get__back").fadeIn(300);
+    $(".popup__get").fadeIn(300);
   });
 
-  $(".get__close, .get__back").on("click", function (e) {
-    if (e.target === this) $(".get__back").fadeOut(300);
+  $(".get__close, .popup__get").on("click", function (e) {
+    if (e.target === this) $(".popup__get").fadeOut(300);
   });
 
   $(".order__close, .popup__order").on("click", function (e) {
@@ -45,7 +45,15 @@ $(document).ready(function () {
     }
   });
 
-  $(".js-range-slider").ionRangeSlider({
+  $('.terms__label').on('click', function () {
+    if ($(this).hasClass('checked')) return true;
+    else {
+      $('.terms__label').removeClass('checked');
+      $(this).addClass('checked');
+    }
+  });
+
+  $(".js-range-slider-sum").ionRangeSlider({
     type: "double",
     min: 0,
     max: 100000,
@@ -53,6 +61,15 @@ $(document).ready(function () {
     to: 100000,
     step: 1000,
     grid: true
+  });
+
+  $(".js-range-slider-months").ionRangeSlider({
+    type: "int",
+    min: 0,
+    max: 3,
+    from: 0,
+    to: 3,
+    step: 1,
   });
 
 });

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style/style.css"/>
     <link rel="stylesheet" href="style/adaptive.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <title>FEMIDA FORCE</title>
 </head>
 <body>
@@ -69,20 +70,27 @@
 
 <main class="main">
     <section class="main__section">
-        <div class="container">
-            <div class="main__section-back">
-                <h3 class="main__section-name to24in14">Франшиза Femida.Force</h3>
-                <h1 class="main__section-title to42in18">
-                    МЫ ДАЕМ КЛИЕНТОВ БЕСПЛАТНО БЕЗ РЕКЛАМНЫХ ИНВЕСТИЦИЙ!
-                </h1>
-                <p class="main__section-desc to24in14">
-                    <span>Вы получаете</span>: готовую бизнес — модель по банкротству,
-                    обучение бизнес-процессам, арбитражное управление и консультации
-                    юристов в центральном офисе, поток клиентов, а главное —
-                    <span>ПОМОЩЬ</span>
-                    на всех этапах
-                </p>
-                <button class="btn to24in14 get__show">Получить</button>
+        <div class="video-wrapper">
+            <video autoplay muted loop poster="image/poster-video.jpg">
+                <source src="image/myforce-bg.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео...
+            </video>
+
+            <div class="container">
+                <div class="main__section-back">
+                    <h3 class="main__section-name to24in14">Франшиза Femida.Force</h3>
+                    <h1 class="main__section-title to42in18">
+                        МЫ ДАЕМ КЛИЕНТОВ БЕСПЛАТНО БЕЗ РЕКЛАМНЫХ ИНВЕСТИЦИЙ!
+                    </h1>
+                    <p class="main__section-desc to24in14">
+                        <span>Вы получаете</span>: готовую бизнес — модель по банкротству,
+                        обучение бизнес-процессам, арбитражное управление и консультации
+                        юристов в центральном офисе, поток клиентов, а главное —
+                        <span>ПОМОЩЬ</span>
+                        на всех этапах
+                    </p>
+                    <button class="btn to24in14 order__show">Получить</button>
+                </div>
             </div>
         </div>
     </section>
@@ -136,7 +144,7 @@
                 <p class="eco__desc to24in14">
                     - спасаем судьбы людей и даем им новый билет в жизнь без долгов!
                 </p>
-                <button class="btn to24in14">Получить</button>
+                <button class="btn to24in14 get__show">Получить</button>
             </div>
         </div>
     </section>
@@ -237,7 +245,7 @@
             <div>
                 <img src="image/free-clients-mobile.png" alt="">
             </div>
-            <button class="btn to24in14">Получить</button>
+            <button class="btn to24in14 order__show">Получить</button>
         </div>
     </section>
 
@@ -315,8 +323,12 @@
                                placeholder="Введите номер Вашего телефона">
                         <button class="btn to24in14">Оставить заявку</button>
                         <div class="form__terms">
-                            <label for="accept-rules">
-                                <input class="to18in14" type="radio" name="terms" id="accept-rules">Я принимаю условия <span>передачи информации</span>
+                            <label class="terms__label">
+                                <input class="terms__input " type="radio" name="consultation-terms" value="yes" checked>
+                                <span class="terms__span"></span>
+                                <div class="to18in14">
+                                    Я принимаю условия <span class="terms-underline">передачи информации</span>
+                                </div>
                             </label>
                         </div>
                     </form>
@@ -388,14 +400,14 @@
                             <img src="image/edit.webp" alt="">
                         </div>
                         <div>
-                            <input type="text" class="js-range-slider" name="sum_range" value="" />
+                            <input type="text" class="js-range-slider-sum" name="sum_range" value=""/>
                         </div>
                         <div class="calculator__months ">
                             Хочу окупить за:
-                            <input type="text" name="amount-months" placeholder="3 месяца">
+                            <input type="text" class="" name="amount-months" placeholder="3 месяца">
                         </div>
                         <div>
-                            <input type="text" class="js-range-slider" name="months_range" value="" />
+                            <input type="text" class="js-range-slider-months" name="months_range" value=""/>
                         </div>
                         <div class="calculator__city">
                             <label class="calculator__city-label">Введите город:
@@ -409,7 +421,8 @@
                             </label>
                         </div>
                         <button class="btn to24in14">Рассчитать</button>
-                        <div class="calculator__info to18in14">Например, 500.000 рублей вложение + 3 месяца окупаемости = доход
+                        <div class="calculator__info to18in14">Например, 500.000 рублей вложение + 3 месяца окупаемости
+                            = доход
                             от 150т в месяц
                         </div>
                     </form>
@@ -584,9 +597,14 @@
                         <input class="input__modal to24in14" type="email" placeholder="E-mail">
                         <input class="input__modal to24in14" type="tel" placeholder="+7 (___) ___ -__-__">
                         <button class="btn to24in14">Получить</button>
-                        <div class="form__terms to24in14">
-                            <input type="radio">
-                            Я согласен (-а) с обработкой <span>Персональных данных</span>
+                        <div class="form__terms">
+                            <label class="terms__label">
+                                <input class="terms__input" type="radio" name="training-terms" value="yes" checked>
+                                <span class="form__terms terms__span"></span>
+                                <div class="to18in14">
+                                    Я согласен (-а) с обработкой <span class="terms-underline">Персональных данных</span>
+                                </div>
+                            </label>
                         </div>
                     </form>
                     <div class="revenue__footnote to18in14"><span class="revenue__clarification">*</span> которые клиент
@@ -915,7 +933,7 @@
             <div class="footer__social">
                 <div class="phone__block">
                     <a href="tel:+79666663924" class="phone">+7 966 666 3924</a>
-                    <button type="button" class="back__call call_show">
+                    <button type="button" class="back__call call__show">
                         Перезвоните мне
                     </button>
                 </div>
@@ -954,7 +972,7 @@
                 </div>
             </div>
         </div>
-        <p class="prava__text to18in14 order__show">2022 © Все права защищены.</p>
+        <p class="prava__text to18in14">2022 © Все права защищены.</p>
     </div>
 </footer>
 <div class="popup__order">
@@ -1065,7 +1083,7 @@
         </form>
     </div>
 </div>
-<div class="get__back">
+<div class="popup__get">
     <div class="get__body">
         <div class="get__close">&times;</div>
         <form action="" class="get__form">

@@ -174,6 +174,10 @@
 }
 
   @media screen and (max-width: 768px) {
+    .main__section-back {
+      padding: 200px 15px;
+    }
+
     .container {
     padding: 0 15px;
     }
@@ -355,6 +359,7 @@
 }
 
 @media screen and (max-width: 425px){
+
   .container__row {
     padding: 5px 20px;
   }

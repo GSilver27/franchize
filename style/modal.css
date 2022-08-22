@@ -1,7 +1,7 @@
 .popup__order,
 .popup__sec45,
 .popup__call-back,
-.get__back,
+.popup__get,
 .popup__leave {
   display: none;
   position: fixed;
@@ -33,7 +33,7 @@
 }
 
 .leave__body {
-  background-image: url("../image/valit_fone.webp");
+  background-image: url("../image/leave-background.webp");
 }
 
 .get__body {
@@ -41,7 +41,7 @@
 }
 
 .call-back__body {
-  background-image: url("../image/razgovor.webp");
+  background-image: url("../image/call-back-background.webp");
   background-position: center;
 }
 
@@ -73,6 +73,14 @@
   font-size: 60px;
   top: 0;
   cursor: pointer;
+}
+
+.sec45__close,
+.leave__close,
+.get__close {
+  background: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .call-back__close,
