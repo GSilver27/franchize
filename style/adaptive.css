@@ -341,10 +341,6 @@
   }
 
 @media screen and (max-width: 515px) and (min-width: 375px) {
-  .main__section .btn {
-
-  }
-
   .about__slider {
     width: 85%;
     margin-top: 60px;
@@ -398,6 +394,17 @@
   }
   .info__includes ul li span {
     font-size: 18px;
+  }
+
+  .slider__review {
+    width: 400px;
+  }
+  .slider__review-image img {
+    object-fit: cover;
+  }
+  .slider__review-image,
+  .slider__review-text {
+    max-width: 100%;
   }
 
   .telegram__background-mobile {

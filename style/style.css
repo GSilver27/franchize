@@ -1365,6 +1365,9 @@ input:focus {
   position: relative;
   align-self: center;
 }
+.slider__review-image img {
+  object-fit: scale-down;
+}
 .slider__review-name {
   position: absolute;
   left: 20px;
