@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // попапы
   $(".order__show").on("click", function () {
     $(".popup__order").fadeIn(300);
   });
@@ -53,6 +54,7 @@ $(document).ready(function () {
     }
   });
 
+  // настройка range-inputs
   $(".js-range-slider-sum").ionRangeSlider({
     type: "double",
     min: 100000,
@@ -71,6 +73,15 @@ $(document).ready(function () {
     to: 3,
     step: 1,
     grid: true,
+  });
+
+  // показ кейсов
+  $('.cases__container_closed').on('click', function(){
+    $(this).next().slideToggle(300);
+  });
+
+  $('.cases__container_opened').on('click', function(){
+    $(this).slideToggle(300);
   });
 
 });

@@ -265,7 +265,7 @@ input:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(4, 51, 72, 0);
+  background: rgba(4, 51, 72, 0.4);
   display: none;
 }
 
@@ -672,7 +672,7 @@ input:focus {
   width: 16px;
   height: 16px;
   margin-right: 15px;
-  background: #000;
+  background: #4E54C8;
 }
 
 .terms__input:checked + .terms__span,
@@ -1229,6 +1229,7 @@ input:focus {
 .cases__section .section-title {
   color: #FFF;
   background: #FFF;
+  margin-bottom: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1239,24 +1240,49 @@ input:focus {
   gap: 40px;
 }
 
+.cases__inner-container {
+  cursor: pointer;
+}
+
 .cases__container_opened {
   position: relative;
+  display: none;
+  top: -30px;
   padding: 30px 60px 30px 100px;
   opacity: 0.89;
   border-radius: 15px;
   background-color: #FFF;
-  margin-top: 4vmin;
+  z-index: 0;
 }
 
 .container__title_rotated {
   position: absolute;
-  left: -160px;
+  left: -150px;
   top: 270px;
   font-weight: 700;
   font-size: 24px;
   text-align: center;
   color: #161235;
   transform: rotate(-90deg);
+}
+
+.cases__inner-container:nth-child(2) .container__title_rotated {
+  left: -170px;
+}
+.cases__inner-container:nth-child(3) .container__title_rotated {
+  left: -120px;
+  top: 250px;
+}
+.cases__inner-container:nth-child(4) .container__title_rotated {
+  left: -160px;
+  top: 290px;
+}
+.cases__inner-container:nth-child(5) .container__title_rotated {
+  left: -180px;
+  top: 290px;
+}
+.cases__inner-container:nth-child(6) .container__title_rotated {
+  left: -60px;
 }
 
 .container__inner-text {
@@ -1268,35 +1294,7 @@ input:focus {
   font-size: 20px;
   line-height: 158.9%;
   color: #161235;
-}
-
-.cases__arrow {
-  position: relative;
-  padding: 0 10px;
-}
-.cases__arrow::before,
-.cases__arrow::after {
-  position: absolute;
-  content: " ";
-  width: 11px;
-  height: 1px;
-  left: 10px;
-  transition: all 0.3s ease 0s;
-  background-color: #4E54C8;
-}
-.cases__arrow::before {
-  transform: rotate(40deg);
-  left: 0;
-}
-.cases__arrow::after {
-  transform: rotate(-40deg);
-  left: 8px;
-}
-.cases__arrow.active::before {
-  transform: rotate(-40deg);
-}
-.cases__arrow.active::after {
-  transform: rotate(40deg);
+  margin-top: 20px;
 }
 
 .container__inner-info {
@@ -1337,6 +1335,102 @@ input:focus {
   font-weight: 600;
 }
 
+.cases__container_closed {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 40px;
+  color: #FFF;
+  opacity: 0.89;
+  border-radius: 15px;
+  background: #161235;
+  z-index: 1;
+}
+
+.cases__container_closed .cases__case {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFF;
+}
+.cases__case span {
+  font-weight: 600;
+}
+.cases__case span:nth-child(3) {
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.cases__result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFF;
+}
+.cases__result div:first-of-type {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.cases__result span {
+  font-weight: 700;
+  color: #4E54C8;
+}
+
+.cases__arrow_open,
+.cases__arrow_close {
+  position: absolute;
+  right: 36px;
+}
+.cases__arrow_open {
+  top: 28px;
+}
+.cases__arrow_close {
+  top: 50px;
+}
+
+.container__inner-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__inner-work,
+.container__inner-result {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161235;
+  margin-top: 20px;
+}
+.container__inner-work li,
+.container__inner-result li {
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 0;
+}
+.container__inner-work li,
+.container__inner-result li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  gap: 12px;
+}
+.container__inner-work li img,
+.container__inner-result li img {
+  width: 12px;
+  height: 12px;
+}
+.container__inner-result li span {
+  color: #4E54C8;
+  font-weight: 600;
+}
 
 .cases__container_closed {
   display: flex;
@@ -1377,13 +1471,6 @@ input:focus {
 .cases__result span {
    font-weight: 700;
   color: #4E54C8;
-}
-
-.cases__arrow-down {
-  display: flex;
-  justify-content: center;
-  margin: 40px auto;
-  cursor: pointer;
 }
 
 .reviews__section {

@@ -1,9 +1,10 @@
+// функции range-inputs
 function rangeSumChangeValue() {
     let rangeInput = document.querySelector('.js-range-slider-sum');
     let containerResult = document.querySelector('.input-sum-result');
 
     // вырезаем значение только второго, активного ренжа
-    let result = rangeInput.value.slice(2, 9);
+    let result = rangeInput.value.slice(7, 14);
     parseInt(result);
 
     containerResult.innerHTML = result;
