@@ -55,21 +55,22 @@ $(document).ready(function () {
 
   $(".js-range-slider-sum").ionRangeSlider({
     type: "double",
-    min: 0,
-    max: 100000,
-    from: 0,
-    to: 100000,
+    min: 100000,
+    max: 1000000,
+    from: 100000,
+    to: 500000,
     step: 1000,
-    grid: true
+    grid: true,
   });
 
-  $(".js-range-slider-months").ionRangeSlider({
-    type: "int",
-    min: 0,
-    max: 3,
+  $(".js-range-slider-months").ionRangeSlider( {
+    type: "double",
+    min: 1,
+    max: 12,
     from: 0,
     to: 3,
     step: 1,
+    grid: true,
   });
 
 });

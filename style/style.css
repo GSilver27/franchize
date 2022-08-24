@@ -840,11 +840,12 @@ input:focus {
   display: flex;
   align-items: center;
 }
-.calculator__sum span{
+.calculator__sum span {
   padding-left: 30px;
   padding-right: 7px;
 }
 .calculator__sum img {
+  padding-left: 7px;
    cursor: pointer;
 }
 
@@ -873,6 +874,20 @@ input:focus {
   border-radius: 50%;
 }
 
+.irs-handle.from {
+  pointer-events: none;
+}
+
+.irs-handle.to:hover {
+  transition: 0.3s;
+}
+
+.irs-handle.to:hover,
+.irs-handle.to:active {
+  cursor: pointer;
+  box-shadow: 0 0 25px #4E54C8;
+}
+
 .irs--flat .irs-handle>i:first-child {
   display: none !important;
 }
@@ -890,9 +905,10 @@ input:focus {
   color: #161235;
 }
 
-.calculator__months input {
+.calculator__months .input-months-result {
   margin-left: 15px;
-  max-width: 150px;
+  max-width: 180px;
+  padding: 5px 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;

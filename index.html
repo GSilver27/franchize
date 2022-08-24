@@ -396,19 +396,14 @@
                 <div class="calculator__form">
                     <form action="">
                         <div class="calculator__sum">
-                            Я хочу вложить: <span>100.000 руб.</span>
+                            Я хочу вложить: <span class="input-sum-result">500 000</span> руб.
                             <img src="image/edit.webp" alt="">
                         </div>
-                        <div>
-                            <input type="text" class="js-range-slider-sum" name="sum_range" value=""/>
+                        <input type="text" class="js-range-slider-sum" onchange="rangeSumChangeValue()"/>
+                        <div class="calculator__months">
+                            Хочу окупить за: <span class="input-months-result">3 месяца</span>
                         </div>
-                        <div class="calculator__months ">
-                            Хочу окупить за:
-                            <input type="text" class="" name="amount-months" placeholder="3 месяца">
-                        </div>
-                        <div>
-                            <input type="text" class="js-range-slider-months" name="months_range" value=""/>
-                        </div>
+                        <input type="text" class="js-range-slider-months" onchange="rangeMonthChangeValue()"/>
                         <div class="calculator__city">
                             <label class="calculator__city-label">Введите город:
                                 <input type="text" class="validator" id="calculator-city" minlength="3" required>
@@ -1163,5 +1158,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 <script src="scripts/jquery.maskedinput.js"></script>
 <script src="scripts/js.js"></script>
+<script src="scripts/range-input.js"></script>
 </body>
 </html>
